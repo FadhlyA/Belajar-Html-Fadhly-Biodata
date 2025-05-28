@@ -4,13 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hwb(0 35% 59%);
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #363535;
+            border-radius: 5px;
+            background-color: #333131;
+        }
+        h1 {
+            text-align: center;
+            color: #e0d7d7;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff9f9;
+        }
+        a{
+            color: #fff9f9;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Hai, what do you want to ask me</h1>
     <form action="#">
         <label for="nama">Nama Anda :</label>
         <input type="text" id="nama" name="Nama" placeholder="Masukan nama anda" ><br>
-    </form>
-    <a href="index.html" target="_self">want to come back ??</a>
+        <label for="nohp">No HP Anda :</label>
+        <input type="text" id="nohp" name="NoHp" placeholder="Masukan no hp anda"><br>
+        <label for="email">Email Anda :</label>
+        <input type="email" id="email" name="Email" placeholder="Masukan email anda"><br>
+        <label for="pesan">Pesan Anda :</label><br>
+        <textarea id="pesan" name="Pesan" rows="4" cols="50" placeholder="Masukan pesan anda"></textarea><br>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+        <input type="button" value="Batal" onclick="window.location.href='index.html'">
+        <input type="button" value="Kembali" onclick="window.history.back()">
+    </form><br>
+    <a href="index.html" target="_self" style="color: aqua;">want to come back ??</a>
 </body>
 </html>
